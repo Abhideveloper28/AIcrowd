@@ -107,7 +107,6 @@ SuccessStory.create!(
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis eleifend tortor, sed porttitor nunc. Vivamus vestibulum ornare tortor, id blandit dolor semper id.</p>
     ',
-    remote_image_file_url: "https://dnczkxd1gcfu5.cloudfront.net/images/challenges/image_file/50/spotify.png",
     published: true,
     posted_at: Time.now)
 

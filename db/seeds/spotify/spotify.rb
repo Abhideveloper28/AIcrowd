@@ -13,8 +13,6 @@ Challenge.create!([
     dynamic_content_tab: nil,
     evaluation_markdown: File.read('evaluation.md'),
     featured_sequence: 10,
-    remote_image_file_url: "https://dnczkxd1gcfu5.cloudfront.net/images/challenges/image_file/50/spotify.png",
-    # image_file: "https://dnczkxd1gcfu5.cloudfront.net/images/challenges/image_file/50/spotify.png",
     license_markdown: "this is the license",
     grader_identifier: "crowdAI_GRADER_POOL",
     grader_logs: true,
@@ -59,12 +57,7 @@ ChallengeRound.create!([
     end_dttm: Time.now + 10.days,
     minimum_score: nil,
     minimum_score_secondary: nil,
-    ranking_window: 24,
-    ranking_highlight: 3,
-    score_precision: 3,
-    score_secondary_precision: 3,
-    leaderboard_note_markdown: "",
-    leaderboard_note: "\n"},
+    ranking_highlight: 3},
   {id: 102,
     challenge_id: 100,
     challenge_round: "Round 1",
@@ -75,12 +68,7 @@ ChallengeRound.create!([
     end_dttm: "2018-11-09 12:00:00",
     minimum_score: nil,
     minimum_score_secondary: nil,
-    ranking_window: 96,
-    ranking_highlight: 3,
-    score_precision: 3,
-    score_secondary_precision: 3,
-    leaderboard_note_markdown: "",
-    leaderboard_note: "\n"},
+    ranking_highlight: 3},
   {id: 103,
     challenge_id: 100,
     challenge_round: "Final Evaluation",
@@ -91,23 +79,16 @@ ChallengeRound.create!([
     end_dttm: "2018-12-31 12:00:00",
     minimum_score: nil,
     minimum_score_secondary: nil,
-    ranking_window: 96,
-    ranking_highlight: 3,
-    score_precision: 3,
-    score_secondary_precision: 3,
-    leaderboard_note_markdown: "",
-    leaderboard_note: "\n"}
+    ranking_highlight: 3}
 ])
 
 ChallengePartner.create!([
   {
     challenge_id: 100,
-    remote_image_file_url: "https://dnczkxd1gcfu5.cloudfront.net/images/challenge_partners/image_file/54/SDSC_logo.png",
     partner_url: "https://datascience.ch/"
   },
   {
     challenge_id: 100,
-    remote_image_file_url: "https://dnczkxd1gcfu5.cloudfront.net/images/challenge_partners/image_file/55/spotify.png",
     partner_url: "https://www.spotify.com/"
   }
 

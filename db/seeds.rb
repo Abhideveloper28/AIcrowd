@@ -43,7 +43,7 @@ if Rails.env == 'development' || Rails.env == 'staging'
 
   # Organizers
   Organizer.create!([
-    {id: 21, organizer: "Poznan University of Technology", image_file: open('https://dnczkxd1gcfu5.cloudfront.net/images/challenges/image_file/50/spotify.png'), address: "Laboratory of Intelligent Decision Support Systems", description: "", approved: true, slug: "poznan-university-of-technology", tagline: "Poznan University of Technology", challenge_proposal: "", api_key: "14b4a11368bb0e22134137aa55bf86af", clef_organizer: false},
+    {id: 21, organizer: "Poznan University of Technology", address: "Laboratory of Intelligent Decision Support Systems", description: "", approved: true, slug: "poznan-university-of-technology", tagline: "Poznan University of Technology", challenge_proposal: "", api_key: "14b4a11368bb0e22134137aa55bf86af", clef_organizer: false},
     {id: 17, organizer: "SBB CFF FFS", address: "Switzerland", description: "SBB Swiss Federal Railways", approved: true, slug: "sbb-cff-ffs", tagline: "SBB CFF FFS", challenge_proposal: "", api_key: "", clef_organizer: false}
   ])
 
@@ -60,7 +60,6 @@ if Rails.env == 'development' || Rails.env == 'staging'
     linkedin: "https://www.linkedin.com/testuser",
     twitter: "https://www.twitter.com/testuser",
     slug: "test_user",
-    remote_image_file_url: "https://dnczkxd1gcfu5.cloudfront.net/images/challenges/image_file/50/spotify.png",
     affiliation: "Test User Incorporated",
     country_cd: "IN",
     address: "TU Block, Pillar number 420",
@@ -95,8 +94,8 @@ if Rails.env == 'development' || Rails.env == 'staging'
 
   # Partners
   Partner.create!([
-    {id: 22, organizer_id: 21, image_file: open('https://dnczkxd1gcfu5.cloudfront.net/images/challenges/image_file/50/spotify.png'), name: "Spotify", visible: true},
-    {id: 1223, organizer_id: 17, image_file: open('https://dnczkxd1gcfu5.cloudfront.net/images/challenges/image_file/50/spotify.png'), name: "Uber", visible: true}
+    {id: 22, organizer_id: 21, name: "Spotify", visible: true},
+    {id: 1223, organizer_id: 17, name: "Uber", visible: true}
   ])
 
   # Challenges
@@ -377,12 +376,7 @@ if Rails.env == 'development' || Rails.env == 'staging'
       end_dttm: "2018-08-12 23:59:00",
       minimum_score: nil,
       minimum_score_secondary: nil,
-      ranking_window: 24,
-      ranking_highlight: 3,
-      score_precision: 3,
-      score_secondary_precision: 3,
-      leaderboard_note_markdown: "",
-      leaderboard_note: "\n"},
+      ranking_highlight: 3},
     {id: 52,
       challenge_id: 37,
       challenge_round: "Round 1",
@@ -393,12 +387,7 @@ if Rails.env == 'development' || Rails.env == 'staging'
       end_dttm: "2018-11-09 12:00:00",
       minimum_score: nil,
       minimum_score_secondary: nil,
-      ranking_window: 96,
-      ranking_highlight: 3,
-      score_precision: 3,
-      score_secondary_precision: 3,
-      leaderboard_note_markdown: "",
-      leaderboard_note: "\n"},
+      ranking_highlight: 3},
     {id: 42,
       challenge_id: 30,
       challenge_round: "Final Evaluation",
@@ -409,12 +398,7 @@ if Rails.env == 'development' || Rails.env == 'staging'
       end_dttm: "2018-12-31 12:00:00",
       minimum_score: nil,
       minimum_score_secondary: nil,
-      ranking_window: 96,
-      ranking_highlight: 3,
-      score_precision: 3,
-      score_secondary_precision: 3,
-      leaderboard_note_markdown: "",
-      leaderboard_note: "\n"}
+      ranking_highlight: 3}
   ])
 
 # Submissions
